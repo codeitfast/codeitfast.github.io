@@ -51,9 +51,3 @@ body{
     fill-opacity: 1;
   }
 }
-
-@media{
-  svg{
-    text-rendering:optimizeSpeed;
-  }
-}
