@@ -3,7 +3,12 @@ let red, blue, green
 let timer = 0
 
 const updateTime = () => {
-  let date = 28 - new Date().getDate()
+  let date
+  if (new Date().getMonth() < 10) {
+    date = 5 + 30 - new Date().getDate()
+  } else {
+    date = 5 - new Date().getDate()
+  }
   let hour = 24 - new Date().getHours()
   let min = 60 - new Date().getMinutes()
   let second = 60 - new Date().getSeconds()
